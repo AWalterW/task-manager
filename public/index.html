@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ProjectManager by JonAnd</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.1.3/vue-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <header>
+      <h1>ProjectManager</h1>
+      <nav>
+        <ul>
+          <li>
+            <router-link to="/home" class="routerLink">Home</router-link>
+            <router-link to="/projects" class="routerLink">Projects</router-link>
+            <router-link to="/members" class="routerLink">Members</router-link>
+
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    <router-view></router-view>
+    <footer>
+      Av Jonathan & Andreas
+    </footer>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+/.idea/
+target
+*.iml
+/ProjectManager.properties
+/logevents.properties
